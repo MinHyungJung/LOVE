@@ -131,24 +131,24 @@ function draw() {
   stroke(105);
  
   textSize(lsize);
-  text("l",590, 750-lmove);
+  text("l",220, 450-lmove);
   lmove = lmove + lm
   
   textSize(osize);
-  text("o",635, 750-omove);
+  text("o",355, 450-omove);
   omove = omove + om;
     textSize(vsize);
-  text("v",705, 750-vmove);
+  text("v",485, 450-vmove);
   vmove = vmove + vm;
   
     textSize(esize);
-  text("e",765, 750-emove);
+  text("e",605, 450-emove);
   emove = emove + em;
   
   fill(30 + sin(frameCount*0.05) * 128);
   strokeWeight(0);
-  textSize(27);
-  text("KeyboardPress!",603,785+emove);
+  textSize(35);
+  text("KeyboardPress!",303,585+emove);
   emove = emove + em;
   
   textSize(50);
@@ -158,8 +158,7 @@ function draw() {
   
   if (keyCode === ENTER) { 
     
-    fill(30,20,209);
-    rect(0,290,1000,5);
+
     fill(200,230,120);
     rect(300,700,300,100);
     smooth();
@@ -175,9 +174,27 @@ function draw() {
   fill(89,120,120);
   square(550,477,200,50);
     
+    
+    
     fill(200,20,100);
      textSize(35);
      text('Physical World',310,130); 
+    
+     
+  
+  stroke(255,0,0);
+  line(0,height/2,width,height/2);
+ 
+  var off = radians(frameCount);
+
+  for(var x=0; x<width; x= x+40)
+  
+  {var move = sin(x/width * radians(360) + off) * 25;
+    fill(200,190,50);
+    rect( x, height/2+move -130, 5, 20 );
+  }
+    
+    
    
   for(let i = 0; i<anxiety.length; i++) {
     anxiety[i].createParticle();
