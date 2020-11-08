@@ -305,7 +305,7 @@ function draw() {
   }
   else{
     fill("white");
-    text("OFF",820,810);
+    text("OFF",815,810);
   }
   
   }
