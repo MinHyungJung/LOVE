@@ -156,6 +156,11 @@ function draw() {
   text("Press Enter!",300,790);
   emove = emove + em;
   
+  
+  
+  
+  
+  
   if (keyCode === ENTER) { 
     
 
@@ -168,12 +173,28 @@ function draw() {
   fill(44,120,120);
   square(112,477,200,20);
     
+    
       noStroke();
   fill(0);
   ellipse(650,400,150);
   fill(89,120,120);
   square(550,477,200,50);
+
+    fill(255);
+    rect(180,450,70,10);
+    rect(615,450,70,10);
     
+    fill(255);
+    ellipse(180,400,50,50);
+    ellipse(250,400,50,50);
+    ellipse(610,400,50,50);
+    ellipse(680,400,50,50);
+    
+    fill(0);
+    ellipse(190,400,20,20);
+    ellipse(260,400,20,20);
+    ellipse(600,400,20,20);
+    ellipse(670,400,20,20);
     
     
     fill(200,20,100);
